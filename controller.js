@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
 
 
 fileFilter = (req, file, cb) => {
-  if (!file.originalname.match(/\.(png|jpg|jpeg|pdf|docx|xls)$/)) {
+  if (!file.originalname.match(/\.(png|jpg|jpeg|pdf|docx|xls|mp4|mkv)$/)) {
 
     return cb(new Error("Please upload valid format"));
   }
